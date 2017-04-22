@@ -15,7 +15,7 @@
   		</ul>
   	</header>
   	<main>
-  		<div class="filters">
+  		<form class="filters">
   			<div class="infrastructure">
   				<h2>Инфраструктура</h2>
   				<div><input type="checkbox" name="pool"><label>бассейн</label></div>
@@ -34,14 +34,16 @@
   				<input type="text" name="to" value="до 3000">
   				<input type="range" min="0" max="3000" step="100" value="0">
   			</div>
-  		</div>
+  		</form>
   		<div class="search-results">
   			<b>Найдено: 3</b>
   			<div class="sort">
   				<p>Сортировка:</p>
-  				<a href="">По цене</a>
-  				<a href="">По типу</a>
-  				<a href="">По рейтингу</a>
+  				<ul>
+  					<li><a href="">По цене</a></li>
+  					<li><a href="">По типу</a></li>
+  					<li><a href="">По рейтингу</a></li>
+  				</ul>
   				<div class="order">
   					<a href=""><img src="#"></a>
   					<a href=""><img src="#"></a>
@@ -73,19 +75,20 @@
   		</div>
   	</main>
   		<footer>
-   		<section class="contacts">
-   			<b>#VISITSEDONA</b>
-   		</section>
-   		<section class="soc-networks">
-   			<ul>
-	   			<li><a class="social-btn social-btn-vk" href="#">Вконтакте</a></li>
-	        	<li><a class="social-btn social-btn-fb" href="#">Фейсбук</a></li>
-	        	<li><a class="social-btn social-btn-inst" href="#">Инстаграм</a></li>
-	        </ul>
-   		</section>
-   		<section class="authors">
-   			<p>website by:</p>
-   			<img src="#">
-   		</section>
+   			<section class="contacts">
+   				<b>#VISITSEDONA</b>
+   			</section>
+   			<section class="soc-networks">
+   				<ul>
+	   				<li><a class="social-btn social-btn-vk" href="#">Вконтакте</a></li>
+	        		<li><a class="social-btn social-btn-fb" href="#">Фейсбук</a></li>
+	        		<li><a class="social-btn social-btn-inst" href="#">Инстаграм</a></li>
+	      	  </ul>
+   			</section>
+			<section class="authors">
+   				<p>website by:</p>
+   				<a href=""><img src="#"></a>
+   			</section>
+   		</footer>
   </body>
 </html>
