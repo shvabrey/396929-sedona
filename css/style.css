@@ -1,13 +1,23 @@
 body {
+	margin: 0;
 	font-size: 14px;
 	line-height: 21px;
 	color: #000000;
 	font-weight: normal;
 	font-family: PT Sans, Sans-serif;
+	text-transform: uppercase;
 }
 
 h1 {
 
+}
+
+li {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
 }
 
 h2 {
@@ -16,4 +26,214 @@ h2 {
 	color: #000000;
 	font-weight: bold;
 	font-family: PT Sans, Sans-serif;
+}
+
+.container {
+	margin: 0 auto;
+	width: 1200px;
+	padding: 0 10px;
+}
+
+.main-header {
+	height: 56px;
+	margin-bottom: -15px;
+}
+
+.main-header ul {
+	display: flex;
+	justify-content: space-around;
+	padding: 0;
+	margin: 0;
+	font-weight: bold;
+}
+
+.main-header ul li:not(:nth-of-type(3)) {
+	margin-top: 21px;
+}
+
+.main-header ul li:nth-of-type(3) {
+	z-index: 0;
+}
+
+.introduction {
+	text-align: center;
+}
+
+.introduction-container {
+	width: 576px;
+	margin: 0 auto;
+}
+
+.introduction b {
+	font-size: 21px;
+}
+
+.reason-first {
+	display: flex;
+	text-align: center;
+	margin-top: 55px;
+	align-items: center;
+}
+
+.reason-first div, .reason-second div {
+	margin: 25px 0;
+}
+
+.reason-first .left-column {
+	width: 400px;
+}
+
+.reason-description {
+	display: flex;
+	min-height: 242px;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.description {
+	text-align: center;
+}
+
+.description b {
+	font-size: 21px;
+}
+
+.reason-second {
+	display: flex;
+	text-align: center;
+	align-items: center;
+}
+
+.another-reasons {
+	display: flex;
+	min-height: 242px;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.reason {
+	text-align: center;
+}
+
+.reservation {
+	text-align: center;
+}
+
+.reservation-intro {
+	width: 576px;
+	margin: 0 auto;
+	min-height: 150px;
+	margin-top: 60px;
+}
+
+.reservation-intro b {
+	font-size: 30px;
+}
+
+.reservation-heading {
+	background-color: #766357;
+	min-height: 85px;
+	width: 568px;
+	margin: 0 auto;
+}
+
+.reservation-heading h2 {
+	display: inline;
+	line-height: 85px;
+	color: #ffffff;
+}
+
+.hotel-search {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	width: 568px;
+	min-height: 395px;
+	margin: 0 auto;
+	font-weight: bold;
+}
+
+footer .container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.contacts {
+	width: 240px;
+}
+
+.soc-networks {
+	width: 400px;
+}
+
+.authors {
+	width: 240px;
+}
+
+.authors p {
+	display: inline;
+}
+
+.filters {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 72px;
+}
+
+.filters h2 {
+	font-size: 16px;
+}
+
+.value {
+	width: 320px;
+}
+
+.accommodation-type {
+	margin-right: auto;
+	margin-left: 115px;
+}
+
+.search-results {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+}
+
+.search-results li{
+	display: inline;
+}
+
+.search-results ul {
+	padding: 0;
+}
+
+.search-results b {
+	height: 25px;
+	font-size: 21px;
+}
+
+.sort {
+	display: flex;
+	margin-right: auto;
+	margin-left: 50px;
+	min-width: 350px;
+	justify-content: space-between;
+}
+
+.hotels article {
+	display: flex;
+	min-height: 150px;
+	align-items: center;
+}
+
+.hotels article h2 {
+	margin: 0;
+}
+
+.hotels article p {
+	margin: 16px 0;
+}
+
+.article-hotel {
+	margin-left: 30px;
 }
