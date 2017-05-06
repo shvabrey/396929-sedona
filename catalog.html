@@ -7,89 +7,108 @@
   </head>
   <body>
   	<header class="main-header">
-  		<ul>
-  			<li><a href="">Информация</a></li>
-  			<li><a href="">Фото и видео</a></li>
-  			<img src="img/header-logo.png">
-  			<li><a href=""> Карта штата</a></li>
-  			<li><a href="">Гостиницы</a></li>
-  		</ul>
+      <div class="container">
+    		<ul>
+    			<li><a href="">Информация</a></li>
+    			<li><a href="">Фото и видео</a></li>
+    			<li><a href="index.html"><img src="img/header-logo.png"></a></li>
+    			<li><a href=""> Карта штата</a></li>
+    			<li><a href="">Гостиницы</a></li>
+    		</ul>
+      </div>
   	</header>
   	<main>
-  		<form class="filters">
-  			<div class="infrastructure">
-  				<h2>Инфраструктура</h2>
-  				<div><input type="checkbox" name="pool"><label>бассейн</label></div>
-  				<div><input type="checkbox" name="parking"><label>парковка</label></div>
-  				<div><input type="checkbox" name="wi-fi"><label>wi-fi</label></div>
-  			</div>
-  			<div class="accommodation-type">
-  				<h2>Тип жилья</h2>
-  				<div><input type="checkbox" name="hotel"><label>гостиница</label></div>
-  				<div><input type="checkbox" name="motel"><label>мотель</label></div>
-  				<div><input type="checkbox" name="apartments"><label>апартаменты</label></div>
-  			</div>
-  			<div class="value">
-  				<h2>Стоимость в сутки (р):</h2>
-  				<input type="text" name="from" value="от 0">
-  				<input type="text" name="to" value="до 3000">
-  				<input type="range" min="0" max="3000" step="100" value="0">
-  			</div>
-  		</form>
-  		<div class="search-results">
-  			<b>Найдено: 3</b>
-  			<div class="sort">
-  				<p>Сортировка:</p>
-  				<ul>
-  					<li><a href="">По цене</a></li>
-  					<li><a href="">По типу</a></li>
-  					<li><a href="">По рейтингу</a></li>
-  				</ul>
-  				<div class="order">
-  					<a href=""><img src="img/up-tri.png"></a>
-  					<a href=""><img src="img/down-tri.png"></a>
-  				</div>
-  			</div>
-  		</div>
-  		<div class="hotels">
-  			<article>
-  				<img src="img/amara.jpg">
-  				<h2>amara resort & spa</h2>
-  				<p>гостиница от 4000 р.</p>
-  				<a href="" class="more">Подробнее</a>
-  				<a href="" class="reservation">забронировать</a>
-  			</article>
-  			<article>
-  				<img src="img/desert.jpg">
-  				<h2>desert quail inn</h2>
-  				<p>мотель от 3000 р.</p>
-  				<a href="" class="more">Подробнее</a>
-  				<a href="" class="reservation">забронировать</a>
-  			</article>
-  			<article>
-  				<img src="img/villas.jpg">
-  				<h2>villas at poco diablo</h2>
-  				<p>апартаменты от 2000 р.</p>
-  				<a href="" class="more">Подробнее</a>
-  				<a href="" class="reservation">забронировать</a>
-  			</article>
-  		</div>
+      <div class="container">
+    		<form class="filters">
+      			<div class="infrastructure">
+      				<h2>Инфраструктура</h2>
+      				<div><input type="checkbox" name="pool" id="pool"><label for="pool">бассейн</label></div>
+      				<div><input type="checkbox" name="parking" id="parking"><label for="parking">парковка</label></div>
+      				<div><input type="checkbox" name="wi-fi" id="wi-fi"><label for="wi-fi">wi-fi</label></div>
+      			</div>
+      			<div class="accommodation-type">
+      				<h2>Тип жилья</h2>
+      				<div><input type="checkbox" name="hotel" id="hotel"><label for="hotel">гостиница</label></div>
+      				<div><input type="checkbox" name="motel" id="motel"><label for="motel">мотель</label></div>
+      				<div><input type="checkbox" name="apartments" id="apartments"><label for="apartments">апартаменты</label></div>
+      			</div>
+      			<div class="value">
+      				<h2>Стоимость в сутки (р):</h2>
+      				<input type="text" name="from" value="от 0">
+      				<input type="text" name="to" value="до 3000">
+      				<input type="range" min="0" max="3000" step="100" value="0">
+              <input type="submit" name="submit">
+      			</div>
+    		</form>
+    		<div class="search-results">
+    			<b>Найдено: 3</b>
+    			<div class="sort">
+    				<p>Сортировка:</p>
+    				<ul>
+    					<li><a href="">По цене</a></li>
+    					<li><a href="">По типу</a></li>
+    					<li><a href="">По рейтингу</a></li>
+    				</ul>
+          </div>
+    			<div class="order">
+    					<a href=""><img src="img/up-tri.png"></a>
+    					<a href=""><img src="img/down-tri.png"></a>
+    			</div>
+        </div>
+    		<div class="hotels">
+    			<article>
+          <div class="article-img">
+    				<img src="img/amara.jpg">
+          </div>
+          <div class = "article-hotel">
+    				<h2>amara resort & spa</h2>
+    				<p>гостиница от 4000 р.</p>
+    				<a href="" class="more">Подробнее</a>
+    				<a href="" class="reservation">забронировать</a>
+          </div>
+    			</article>
+    			<article>
+          <div class="article-img">
+    				<img src="img/desert.jpg">
+          </div>
+          <div class = "article-hotel">
+    				<h2>desert quail inn</h2>
+    				<p>мотель от 3000 р.</p>
+    				<a href="" class="more">Подробнее</a>
+    				<a href="" class="reservation">забронировать</a>
+          </div>
+    			</article>
+    			<article>
+          <div class="article-img">
+    				<img src="img/villas.jpg">
+          </div>
+          <div class = "article-hotel">
+    				<h2>villas at poco diablo</h2>
+    				<p>апартаменты от 2000 р.</p>
+    				<a href="" class="more">Подробнее</a>
+    				<a href="" class="reservation">забронировать</a>
+          </div>
+    			</article>
+    		</div>
+      </div>
   	</main>
   		<footer>
-   			<section class="contacts">
-   				<b>#VISITSEDONA</b>
-   			</section>
-   			<section class="soc-networks">
-   				<ul>
-	   				<li><a class="social-btn social-btn-vk" href="#">Вконтакте</a></li>
-	        		<li><a class="social-btn social-btn-fb" href="#">Фейсбук</a></li>
-	        		<li><a class="social-btn social-btn-inst" href="#">Инстаграм</a></li>
-	      	  </ul>
-   			</section>
-			<section class="authors">
-   				<p>website by:</p>
-   				<a href=""><img src="img/academy-logo.png"></a>
-   			</section>
+        <div class="container">
+     			<section class="contacts">
+     				<b>#VISITSEDONA</b>
+     			</section>
+     			<section class="soc-networks">
+     				<ul>
+  	   				<li><a class="social-btn social-btn-vk" href="#">Вконтакте</a></li>
+  	        		<li><a class="social-btn social-btn-fb" href="#">Фейсбук</a></li>
+  	        		<li><a class="social-btn social-btn-inst" href="#">Инстаграм</a></li>
+  	      	  </ul>
+     			</section>
+  			<section class="authors">
+     				<p>website by:</p>
+     				<a href=""><img src="img/academy-logo.png"></a>
+     			</section>
+        </div>
    		</footer>
   </body>
 </html>
