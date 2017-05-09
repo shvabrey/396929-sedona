@@ -2,43 +2,94 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Седона</title>
   </head>
   <body>
   	<header class="main-header">
       <div class="container">
-    		<ul>
-    			<li><a href="">Информация</a></li>
-    			<li><a href="">Фото и видео</a></li>
-    			<li><a href="index.html"><img src="img/header-logo.png"></a></li>
-    			<li><a href=""> Карта штата</a></li>
-    			<li><a href="">Гостиницы</a></li>
-    		</ul>
+        <ul>
+          <li><a href="">ИНФОРМАЦИЯ</a></li>
+          <li><a href="">ФОТО И ВИДЕО</a></li>
+        </ul>
+        <a href="index.html" class="header-logo"><img src="img/header-logo.png" alt="header logo"></a>
+        <ul>
+          <li><a href=""> КАРТА ШТАТА</a></li>
+          <li><a href="#">ГОСТИНИЦЫ</a></li>
+        </ul>
       </div>
   	</header>
   	<main>
       <div class="container">
     		<form class="filters">
       			<div class="infrastructure">
-      				<h2>Инфраструктура</h2>
-      				<div><input type="checkbox" name="pool" id="pool"><label for="pool">бассейн</label></div>
-      				<div><input type="checkbox" name="parking" id="parking"><label for="parking">парковка</label></div>
-      				<div><input type="checkbox" name="wi-fi" id="wi-fi"><label for="wi-fi">wi-fi</label></div>
-      			</div>
+      				<h2>Инфраструктура:</h2>
+              <div class="checkboxes">
+        				<div>
+                  <label class="checkbox" for="pool">
+                    <input type="checkbox" name="pool" id="pool" checked>
+                    <span class="checkbox-indicator"></span>
+                    бассейн
+                  </label>
+                </div>
+        				<div>
+                  <label class="checkbox" for="parking">
+                    <input type="checkbox" name="parking" id="parking">
+                    <span class="checkbox-indicator"></span>
+                    парковка
+                  </label>
+                </div>
+        				<div>
+                  <label class="checkbox" for="wi-fi">
+                    <input type="checkbox" name="wi-fi" id="wi-fi">
+                    <span class="checkbox-indicator"></span>
+                    wi-fi
+                  </label>
+                </div>
+              </div>
+            </div>
       			<div class="accommodation-type">
-      				<h2>Тип жилья</h2>
-      				<div><input type="checkbox" name="hotel" id="hotel"><label for="hotel">гостиница</label></div>
-      				<div><input type="checkbox" name="motel" id="motel"><label for="motel">мотель</label></div>
-      				<div><input type="checkbox" name="apartments" id="apartments"><label for="apartments">апартаменты</label></div>
+      				<h2>Тип жилья:</h2>
+              <div class="checkboxes">
+        				<div>
+                  <label class="checkbox" for="hotel">
+                    <input type="checkbox" name="hotel" id="hotel" checked>
+                    <span class="checkbox-indicator"></span>
+                    гостиница
+                  </label>
+                </div>
+                <div>
+                  <label class="checkbox" for="motel">
+                    <input type="checkbox" name="motel" id="motel" checked>
+                    <span class="checkbox-indicator"></span>
+                    мотель
+                  </label>
+                </div>
+                <div>
+                  <label class="checkbox" for="apartments">
+                    <input type="checkbox" name="apartments" id="apartments" checked>
+                    <span class="checkbox-indicator"></span>
+                    апартаменты
+                  </label>
+                </div>
+              </div>
       			</div>
-      			<div class="value">
-      				<h2>Стоимость в сутки (р):</h2>
-      				<input type="text" name="from" value="от 0">
-      				<input type="text" name="to" value="до 3000">
-      				<input type="range" min="0" max="3000" step="100" value="0">
-              <input type="submit" name="submit">
-      			</div>
+      			<div class="filter-range">
+              <div class="filter-range-title">Стоимость в сутки (р):</div>
+              <div class="price-controls">
+                <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+              </div>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="range-toggle range-toggle-min"></div>
+                <div class="range-toggle range-toggle-max"></div>
+              </div>
+              <button class="btn-transparent" type="submit">Показать</button>
+          </div>
     		</form>
     		<div class="search-results">
     			<b>Найдено: 3</b>
@@ -50,63 +101,65 @@
     					<li><a href="">По рейтингу</a></li>
     				</ul>
           </div>
-    			<div class="order">
-    					<a href=""><img src="img/up-tri.png"></a>
-    					<a href=""><img src="img/down-tri.png"></a>
-    			</div>
         </div>
     		<div class="hotels">
-    			<article>
+    			<article class="amara">
           <div class="article-img">
-    				<img src="img/amara.jpg">
+    				<img src="img/amara.jpg" alt="amara hotel">
           </div>
           <div class = "article-hotel">
-    				<h2>amara resort & spa</h2>
-    				<p>гостиница от 4000 р.</p>
-    				<a href="" class="more">Подробнее</a>
-    				<a href="" class="reservation">забронировать</a>
+    				<h2><a href="#">amara resort & spa</a></h2>
+    				<p><span>гостиница</span>от 4000 р.</p>
+    				<div class="hotel-button">
+              <a href="" class="more-btn">Подробнее</a>
+    				  <a href="" class="reservation-btn">забронировать</a>
+            </div>
           </div>
     			</article>
-    			<article>
+    			<article class="desert">
           <div class="article-img">
-    				<img src="img/desert.jpg">
+    				<img src="img/desert.jpg" alt="desert quail inn hotel">
           </div>
           <div class = "article-hotel">
-    				<h2>desert quail inn</h2>
-    				<p>мотель от 3000 р.</p>
-    				<a href="" class="more">Подробнее</a>
-    				<a href="" class="reservation">забронировать</a>
+    				<h2><a href="#">desert quail inn</a></h2>
+    				<p><span>мотель</span>от 3000 р.</p>
+    				<div class="hotel-button">
+              <a href="" class="more-btn">Подробнее</a>
+    				  <a href="" class="reservation-btn">забронировать</a>
+            </div>
           </div>
     			</article>
-    			<article>
+    			<article class="villas">
           <div class="article-img">
-    				<img src="img/villas.jpg">
+    				<img src="img/villas.jpg" alt="villas at poco diablo hotel">
           </div>
           <div class = "article-hotel">
-    				<h2>villas at poco diablo</h2>
-    				<p>апартаменты от 2000 р.</p>
-    				<a href="" class="more">Подробнее</a>
-    				<a href="" class="reservation">забронировать</a>
+    				<h2><a href="#">villas at poco diablo</a></h2>
+    				<p><span>апартаменты</span>от 2000 р.</p>
+    				<div class="hotel-button">
+              <a href="" class="more-btn">Подробнее</a>
+    				  <a href="" class="reservation-btn">забронировать</a>
+            </div>
           </div>
     			</article>
     		</div>
       </div>
   	</main>
-  		<footer>
+  		<footer class="main-footer">
         <div class="container">
      			<section class="contacts">
      				<b>#VISITSEDONA</b>
      			</section>
      			<section class="soc-networks">
      				<ul>
-  	   				<li><a class="social-btn social-btn-vk" href="#">Вконтакте</a></li>
-  	        		<li><a class="social-btn social-btn-fb" href="#">Фейсбук</a></li>
-  	        		<li><a class="social-btn social-btn-inst" href="#">Инстаграм</a></li>
-  	      	  </ul>
+  	   				<li><a class="social-btn social-btn-twt" href="#"></a></li>
+              <li><a class="social-btn social-btn-fb" href="#"></a></li>
+              <li><a class="social-btn social-btn-yt" href="#"></a></li>
+  	      	</ul>
      			</section>
   			<section class="authors">
-     				<p>website by:</p>
-     				<a href=""><img src="img/academy-logo.png"></a>
+     				<p>website by</p>
+     				<a href="https://htmlacademy.ru/intensive/htmlcss"></a>
      			</section>
         </div>
    		</footer>
