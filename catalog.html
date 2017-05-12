@@ -20,7 +20,7 @@
         </ul>
       </div>
   	</header>
-  	<main>
+  	<main class="main">
       <div class="container">
     		<form class="filters">
       			<div class="infrastructure">
@@ -96,16 +96,20 @@
     			<div class="sort">
     				<p>Сортировка:</p>
     				<ul>
-    					<li><a href="">По цене</a></li>
+    					<li><a href="" class="active">По цене</a></li>
     					<li><a href="">По типу</a></li>
     					<li><a href="">По рейтингу</a></li>
     				</ul>
           </div>
+          <div class="order">
+            <a href="" class="up-order"></a>
+            <a href="" class="down-order"></a>
+          </div>
         </div>
     		<div class="hotels">
-    			<article class="amara">
+    			<article>
           <div class="article-img">
-    				<img src="img/amara.jpg" alt="amara hotel">
+    				<a href="#"><img src="img/amara.jpg" alt="amara hotel"></a>
           </div>
           <div class = "article-hotel">
     				<h2><a href="#">amara resort & spa</a></h2>
@@ -115,10 +119,14 @@
     				  <a href="" class="reservation-btn">забронировать</a>
             </div>
           </div>
+          <div class="rating">              
+              <a href=""><img src="img/4-stars.png" class="rating-stars" width="89" height="17"></a>
+              <a href=""><img src="img/8,5.png" class="rating-value"></a>
+          </div>
     			</article>
-    			<article class="desert">
+    			<article>
           <div class="article-img">
-    				<img src="img/desert.jpg" alt="desert quail inn hotel">
+    				<a href="#"><img src="img/desert.jpg" alt="desert quail inn hotel"></a>
           </div>
           <div class = "article-hotel">
     				<h2><a href="#">desert quail inn</a></h2>
@@ -128,10 +136,14 @@
     				  <a href="" class="reservation-btn">забронировать</a>
             </div>
           </div>
+          <div class="rating">              
+              <a href=""><img src="img/3-stars.png" class="rating-stars" width="65" height="17"></a>
+              <a href=""><img src="img/8,9.png" class="rating-value"></a>
+          </div>
     			</article>
-    			<article class="villas">
+    			<article>
           <div class="article-img">
-    				<img src="img/villas.jpg" alt="villas at poco diablo hotel">
+    				<a href="#"><img src="img/villas.jpg" alt="villas at poco diablo hotel"></a>
           </div>
           <div class = "article-hotel">
     				<h2><a href="#">villas at poco diablo</a></h2>
@@ -140,6 +152,10 @@
               <a href="" class="more-btn">Подробнее</a>
     				  <a href="" class="reservation-btn">забронировать</a>
             </div>
+          </div>
+          <div class="rating">              
+              <a href=""><img src="img/2-stars.png" class="rating-stars" width="42" height="17"></a>
+              <a href=""><img src="img/9,2.png" class="rating-value"></a>
           </div>
     			</article>
     		</div>
